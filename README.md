@@ -1,10 +1,6 @@
 # pdfbox
 **Guía operativa de PDFBOX**
 
-![Interfaz de usuario gráfica
-
-Descripción generada automáticamente](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.001.png)
-
 La aplicación PDFBOX es una utilidad desarrollada en JAVA que reemplaza, en muchos casos, las operaciones que se pueden realizar con archivos PDF con el producto Adobe Acrobat® o Kofax®, cuyas licencias están limitadas. A pesar de que los dibujos y el *tooltip* es descriptivo, se edita esta guía a petición de algún usuario que lo solicitó. 
 
 Requiere el *runtime* de JAVA 8 (el que tenemos instalado actualmente).
@@ -43,48 +39,35 @@ Esta opción tiene tres posibilidades:
 
 ![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.005.png)
 
-
-
-
-
 ***ROTAR***
 
-![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.006.png)**Rota el documento** en +90°, 180° o -90°.
+![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.006.png)
+**Rota el documento** en +90°, 180° o -90°.
 
 Lo deja en la misma ubicación del original con la palabra – GIRADO (***nombre\_fichero-GIRADO.pdf***)
 
-
-
-
 ***INCLUIR***
 
-![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.007.png)**Incluye un documento en otro**, a PRINCIPIO o al FINAL. Deja el nuevo fichero en la misma ubicación de los ficheros, con el nombre de –INSERTADO (***nombre\_de\_fichero-INSERTADO.pdf***)
-
-
-
+![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.007.png)
+**Incluye un documento en otro**, a PRINCIPIO o al FINAL. Deja el nuevo fichero en la misma ubicación de los ficheros, con el nombre de –INSERTADO (***nombre\_de\_fichero-INSERTADO.pdf***)
 
 ***ELIMINAR PÁGINAS***
 
-![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.008.png)**Elimina páginas** de un fichero PDF. Se eligen las páginas en formato individual, separadas por comas o por rango, separadas por guion. Deja el fichero en el mismo lugar que el original más el nombre: -CON PÁGINAS ELIMINADAS (***nombre\_del\_fichero-CON PÁGINAS ELIMINADAS.pdf***).
+![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.008.png)
+**Elimina páginas** de un fichero PDF. Se eligen las páginas en formato individual, separadas por comas o por rango, separadas por guion. Deja el fichero en el mismo lugar que el original más el nombre: -CON PÁGINAS ELIMINADAS (***nombre\_del\_fichero-CON PÁGINAS ELIMINADAS.pdf***).
 
 **INSERTAR**
 
-![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.009.png)**Inserta un fichero en otro**, en una página determinada, que se debe especificar. Deja el fichero montado en la misma ubicación que el original con la palabra INSERTADO. (***nombre\_de\_fichero-INSERTADO.pdf***)
+![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.009.png)
+**Inserta un fichero en otro**, en una página determinada, que se debe especificar. Deja el fichero montado en la misma ubicación que el original con la palabra INSERTADO. (***nombre\_de\_fichero-INSERTADO.pdf***)
 
 **COMPRIMIR**
 
 **Comprime un PDF** mediante la técnica de convertir en imágenes cada una de las páginas. Los ficheros PDF ya suelen estar comprimidos de serie y poco se puede hacer, pero a veces, funciona. La calidad del documento puede ser inaceptable.
 
-![Imagen que contiene Interfaz de usuario gráfica
-
-Descripción generada automáticamente](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.010.png)
-
 **EXTRAER TEXTO**
 
-![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.011.png)**Extrae el texto** de un documento PDF que sea legible. No hace OCR, es decir, que aquellos documentos que sean fotocopias o imagen, no extraerá ningún texto.
+![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.011.png)
+**Extrae el texto** de un documento PDF que sea legible. No hace OCR, es decir, que aquellos documentos que sean fotocopias o imagen, no extraerá ningún texto.
 
 Una vez extraído, se puede seleccionar todo o parte, copiar y pegar.
-
-
-
-`	`-1-
