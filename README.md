@@ -3,13 +3,9 @@
 ![PRINCIPAL](img/img1.png)
 La aplicación PDFBOX es una utilidad desarrollada en JAVA que reemplaza, en muchos casos, las operaciones que se pueden realizar con archivos PDF con el producto Adobe Acrobat® o Kofax®, cuyas licencias están limitadas. A pesar de que los dibujos y el *tooltip* es descriptivo, se edita esta guía a petición de algún usuario que lo solicitó. 
 
-Requiere el *runtime* de JAVA 8 (el que tenemos instalado actualmente).
+Requiere el *runtime* de JAVA 8.
 
-Por favor, reportar los problemas o sugerencias a José María Redondo, de la UPI de Córdoba.
-
-*NOTA: Esta aplicación la desarrollé para uso personal y no era mi intención que se difundiera, pero ha ido extendiéndose sin pretenderlo. Lo comento porque adolece de todo tipo de cuidado de diseño y facilidad de uso, y solo se han tenido en cuenta las funcionalidades prácticas de la misma, por lo que pido disculpas.*
-
-*EL AUTOR*
+Por favor, reportar los problemas o sugerencias a jmredondo1@gmail.com.
 
 **INSTALACIÓN**
 
@@ -64,12 +60,12 @@ Lo deja en la misma ubicación del original con la palabra – GIRADO (***nombre
 **Inserta un fichero en otro**, en una página determinada, que se debe especificar. Deja el fichero montado en la misma ubicación que el original con la palabra INSERTADO. (***nombre\_de\_fichero-INSERTADO.pdf***)
 
 **COMPRIMIR**
-
+![comprimir](img/img10.png)
 **Comprime un PDF** mediante la técnica de convertir en imágenes cada una de las páginas. Los ficheros PDF ya suelen estar comprimidos de serie y poco se puede hacer, pero a veces, funciona. La calidad del documento puede ser inaceptable.
 
 **EXTRAER TEXTO**
 
-![EXTRAER](img/img10.png)
+![EXTRAER](img/img11.png)
 **Extrae el texto** de un documento PDF que sea legible. No hace OCR, es decir, que aquellos documentos que sean fotocopias o imagen, no extraerá ningún texto.
 
 Una vez extraído, se puede seleccionar todo o parte, copiar y pegar.
