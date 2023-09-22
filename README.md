@@ -1,6 +1,7 @@
 # pdfbox
 **Guía operativa de PDFBOX**
 ![PRINCIPAL](img/img1.png)
+
 La aplicación PDFBOX es una utilidad desarrollada en JAVA que reemplaza, en muchos casos, las operaciones que se pueden realizar con archivos PDF con el producto Adobe Acrobat® o Kofax®, cuyas licencias están limitadas. A pesar de que los dibujos y el *tooltip* es descriptivo, se edita esta guía a petición de algún usuario que lo solicitó. 
 
 Requiere el *runtime* de JAVA 8.
@@ -18,6 +19,7 @@ Requiere que tanto *el fichero JAR como la carpeta LIB estén en la misma ubicac
 ***UNIR DOCUMENTOS***
 
 ![UNIR](img/img2.png)
+
 **Une los documentos que se encuentran en una carpeta**, ordenados alfabéticamente, tal y como se ven ordenados por nombre en el administrador de archivos de Windows, y lo deja dentro de la carpeta con el nombre **@UNIDOS.pdf**
 
 Esta opción tiene tres posibilidades:
@@ -33,6 +35,7 @@ Esta opción tiene tres posibilidades:
 ***SEPARAR PÁGINAS***
 
 ![UNIR](img/img4.png)
+
 **Separa un documento en páginas individuales**. Deja una carpeta en la ubicación del fichero original con el nombre del fichero y el texto –SEPARADAS (***nombre\_fichero –SEPARADAS***)
 
 ![UNIR](img/img5.png)
@@ -40,6 +43,7 @@ Esta opción tiene tres posibilidades:
 ***ROTAR***
 
 ![ROTAR](img/img6.png)
+
 **Rota el documento** en +90°, 180° o -90°.
 
 Lo deja en la misma ubicación del original con la palabra – GIRADO (***nombre\_fichero-GIRADO.pdf***)
@@ -47,11 +51,13 @@ Lo deja en la misma ubicación del original con la palabra – GIRADO (***nombre
 ***INCLUIR***
 
 ![INCLUIR](img/img7.png)
+
 **Incluye un documento en otro**, a PRINCIPIO o al FINAL. Deja el nuevo fichero en la misma ubicación de los ficheros, con el nombre de –INSERTADO (***nombre\_de\_fichero-INSERTADO.pdf***)
 
 ***ELIMINAR PÁGINAS***
 
 ![ELIMINAR](img/img8.png)
+
 **Elimina páginas** de un fichero PDF. Se eligen las páginas en formato individual, separadas por comas o por rango, separadas por guion. Deja el fichero en el mismo lugar que el original más el nombre: -CON PÁGINAS ELIMINADAS (***nombre\_del\_fichero-CON PÁGINAS ELIMINADAS.pdf***).
 
 **INSERTAR**
@@ -60,12 +66,15 @@ Lo deja en la misma ubicación del original con la palabra – GIRADO (***nombre
 **Inserta un fichero en otro**, en una página determinada, que se debe especificar. Deja el fichero montado en la misma ubicación que el original con la palabra INSERTADO. (***nombre\_de\_fichero-INSERTADO.pdf***)
 
 **COMPRIMIR**
+
 ![comprimir](img/img10.png)
+
 **Comprime un PDF** mediante la técnica de convertir en imágenes cada una de las páginas. Los ficheros PDF ya suelen estar comprimidos de serie y poco se puede hacer, pero a veces, funciona. La calidad del documento puede ser inaceptable.
 
 **EXTRAER TEXTO**
 
 ![EXTRAER](img/img11.png)
+
 **Extrae el texto** de un documento PDF que sea legible. No hace OCR, es decir, que aquellos documentos que sean fotocopias o imagen, no extraerá ningún texto.
 
 Una vez extraído, se puede seleccionar todo o parte, copiar y pegar.
