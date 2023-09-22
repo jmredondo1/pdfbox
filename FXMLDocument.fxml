@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdfbox.FXMLDocumentController">
+    
+    <children>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#e1f1ff" height="62.0" layoutX="12.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" width="347.0" /> 
+        <SplitMenuButton fx:id="btnUnir" layoutX="13.0" layoutY="28.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="160.0" text="Unir&#10;documentos">
+            <items>
+                <MenuItem onAction="#handleUnir" text="Unir" />
+                <MenuItem onAction="#handleUnirIndexar" text="Unir e indexar" />
+                <MenuItem onAction="#handleUnirIndexarNumerar" text="Unir, indexar y numerar" />
+            </items>
+           
+           
+            <tooltip>
+                <Tooltip text="Unir todos los PDF de una carpeta&#10;en un solo archivo (indexado y numerado)" />
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="Iconos/unir.png" />
+                    </image>                            
+                </ImageView>
+            </graphic> 
+           
+        </SplitMenuButton>            
+        <Button fx:id="btnSeparar" layoutX="191.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleBtnSeparar" prefHeight="60.0" prefWidth="160.0" text="Separar&#10;páginas">
+            
+            <tooltip>
+                <Tooltip text="Separa un PDF en páginas individuales&#10; y lo deja en una carpeta" />
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="Iconos/separar.png" />
+                    </image>                            
+                </ImageView>
+            </graphic>
+            
+        </Button>            
+        <Button fx:id="btnExtraerTexto" layoutX="192.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleBtnExtraerTexto" prefHeight="60.0" prefWidth="160.0" text="Extraer&#10;texto">
+            
+            <tooltip>
+                <Tooltip text="Extrae texto (si es posible...).&#10;No hace OCR" />
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="Iconos/texto.png" />
+                    </image>                            
+                </ImageView>
+            </graphic>
+            
+        </Button>            
+        
+        
+        
+        <SplitMenuButton layoutX="13.0" layoutY="94.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="160.0" text="Rotar">
+            <items>
+                <MenuItem onAction="#handleRota90" text="Rotar derecha" />
+                <MenuItem onAction="#handleRota180" text="Invertir" />
+                <MenuItem onAction="#handleRota270" text="Rotar izquierda" />
+            </items>
+            
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="Iconos/rotar.png" />
+                    </image>                            
+                </ImageView>
+            </graphic>
+            
+        </SplitMenuButton>
+        
+        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#e1f1ff" height="75.0" layoutX="10.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE" width="347.0" />
+        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#e1f1ff" height="72.0" layoutX="10.0" layoutY="233.0" stroke="BLACK" strokeType="INSIDE" width="347.0" />
+		
+        <TextField fx:id="txtEliminarPaginas" layoutX="42.0" layoutY="187.0" prefHeight="25.0" prefWidth="135.0" promptText="1-3, 8 , 11-14" />
+        <Button fx:id="btnEliminarPaginas" layoutX="191.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleBtnEliminarPaginas" prefHeight="60.0" prefWidth="160.0" text="Eliminar&#10;páginas">
+            
+            <tooltip>
+                <Tooltip text="Eliminar páginas&#10;Rango: X-Y&#10;Páginas: X,Y&#10;Ambas inclusive" />
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="Iconos/eliminar.png" />
+                    </image>                            
+                </ImageView>
+            </graphic>
+            
+        </Button>
+        <Label layoutX="12.0" layoutY="165.0" prefHeight="25.0" prefWidth="150.0" text="Págs. a eliminar (incl)" textAlignment="RIGHT" />
+        <SplitMenuButton fx:id="btnIncluir" layoutX="191.0" layoutY="94.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="160.0" text="Incluir">
+            <items>
+                <MenuItem onAction="#handleIncluyePrincipio" text="Al principio" />
+                <MenuItem onAction="#handleIncluyeFinal" text="Al final" />
+            </items>
+            
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="Iconos/incluir.png" />
+                    </image>                            
+                </ImageView>
+            </graphic>
+            
+        </SplitMenuButton>
+        <TextField fx:id="txtInsertarEnPagina" layoutX="128.0" layoutY="267.0" prefHeight="25.0" prefWidth="45.0" promptText="1" />
+        <Label layoutX="12.0" layoutY="248.0" text="Página donde insertar" />
+      
+        <Button fx:id="btnInsertar" layoutX="191.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleInsertar" prefHeight="60.0" prefWidth="160.0" text="Insertar">
+            <tooltip>
+                <Tooltip text="Inserta un PDF en otro fichero&#10; en una página concreta" />
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="Iconos/insertar.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        
+        <TextArea fx:id="textArea" layoutX="8.0" layoutY="374.0" prefHeight="128.0" prefWidth="355.0" promptText="Texto extraido" visible="false" />
+        
+        <ImageView fx:id="imgEspera" fitHeight="31.0" fitWidth="45.0" layoutX="-8.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="Iconos/espera.gif" />
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="imgOk" fitHeight="31.0" fitWidth="45.0" layoutX="2.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="Iconos/ok.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="imgCancel" fitHeight="31.0" fitWidth="45.0" layoutX="2.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="Iconos/cancel.png" />
+            </image>
+        </ImageView>
+        
+        <Label fx:id="labelMsg" layoutX="26.0" layoutY="502.0" prefHeight="31.0" prefWidth="320.0" text="Mensajes" textFill="RED" />
+      <AnchorPane layoutX="191.0" layoutY="311.0">
+         <children>
+            <Button fx:id="btnComprimir" layoutY="-1.0" mnemonicParsing="false" onAction="#handleBtnComprimir" prefHeight="54.0" prefWidth="160.0" text="Comprimir">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="Iconos/compress.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Comprime un documento degradando la calidad" />
+               </tooltip>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Slider fx:id="sldCalidad" blockIncrement="50.0" layoutX="27.0" layoutY="334.0" max="300" min="50" showTickLabels="true" showTickMarks="true" value="175" />
+      <Label layoutX="22.0" layoutY="316.0" prefHeight="17.0" prefWidth="157.0" text="Calidad del documento (DPI)" />
+      <Label layoutX="13.0" layoutY="306.0" text="-" textFill="RED">
+         <font>
+            <Font size="44.0" />
+         </font></Label>
+      <Label layoutX="162.0" layoutY="315.0" prefHeight="17.0" prefWidth="10.0" text="+" textFill="RED">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+    </children>
+    
+</AnchorPane>
