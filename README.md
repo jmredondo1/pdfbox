@@ -21,7 +21,7 @@ Requiere que tanto *el fichero JAR como la carpeta LIB estén en la misma ubicac
 
 ***UNIR DOCUMENTOS***
 
-![](Aspose.Words.57cf8ae6-76b8-4fc3-8594-1d4611b341c0.002.png)**Une los documentos que se encuentran en una carpeta**, ordenados alfabéticamente, tal y como se ven ordenados por nombre en el administrador de archivos de Windows, y lo deja dentro de la carpeta con el nombre **@UNIDOS.pdf**
+![UNIR](/img/image2.png)**Une los documentos que se encuentran en una carpeta**, ordenados alfabéticamente, tal y como se ven ordenados por nombre en el administrador de archivos de Windows, y lo deja dentro de la carpeta con el nombre **@UNIDOS.pdf**
 
 Esta opción tiene tres posibilidades:
 
